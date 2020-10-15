@@ -7,7 +7,7 @@
                 <div class="col-12 mt-2 mb-4 text-center">
                     <h3 class="card-title">Registro Persona</h3>
                 </div>
-                <form method="POST" action="" class="needs-validation" novalidate>
+                    <form method="POST" action="{{route('persona.store')}}" class="needs-validation" novalidate>
                     @csrf
                     <div class="form-row justify-content-center">
 

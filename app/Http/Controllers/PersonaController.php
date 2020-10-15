@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Persona;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class PersonaController extends Controller
@@ -39,9 +40,10 @@ class PersonaController extends Controller
      */
     public function store(Request $request)
     {
-        $producto = new Persona();
+        $persona = new Persona();
 
-        $perona->identificacion = $request->input('identificacion');
+        $persona->id_empresa = Auth::user()->id_empresa;
+        $persona->identificacion = $request->input('identificacion');
         $persona->nombres = $request->input('nombres');
         $persona->apellidos = $request->input('apellidos');
         $persona->telefono = $request->input('telefono');

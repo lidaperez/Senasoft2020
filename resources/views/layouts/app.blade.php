@@ -73,6 +73,40 @@
             @yield('content')
         </main>
     </div>
+
+    <footer class="container-fluid footer-login">
+
+        <div class="row mt-5 lista-links">
+            <div class="col-md-1"></div>
+            <div class="col-12 col-sm-12 col-md mt-5 mb-5 lista-links">
+                <h4 class="text-center-sm">Información de contacto</h4>
+                <ul class="list-group list-unstyled">
+                    <li><i class="fas fa-directions"></i> Carrera 9 N° 71N-60 Popayán, Cauca</li>
+                    <li class="mt-1 ml-1"><i class="fas fa-mobile-alt mr-1"></i> +57 3154954820</li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 mt-5 mb-5 lista-links">
+                <h4 class="text-center-sm">Redes sociales</h4>
+                <ul class="list-group list-unstyled ">
+                    <li> <a href="" target="_blank"><i class="fab fa-facebook-square fa-2x" id="icon-fot"></i> </a>
+                        <a href="" target="_blank"><i class="fab fa-twitter-square fa-2x" id="icon-fot"></i> </a>
+                        <a href="" target="_blank"><i class="fab fa-instagram fa-2x" id="icon-fot"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-md mt-5 mb-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1993.0374246986253!2d-76.56287287983018!3d2.4821742503692894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300410eb607c65%3A0x614545787e90bea6!2sSENA!5e0!3m2!1ses-419!2sco!4v1576603028265!5m2!1ses-419!2sco" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-12 mb-1 text-center">
+            <span id="copy">Copyright&copy;2020</span>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>

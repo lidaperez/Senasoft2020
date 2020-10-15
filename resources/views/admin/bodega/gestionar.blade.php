@@ -2,9 +2,8 @@
 @section('content')
 <div class="row">
     <div class="col-12 text-center">
-        <h3 class="card-title mb-4">Gestionar Bodega</h3>
+        <h3 class="card-title mb-4">Gestionar Bodegas</h3>
     </div>
-
 </div>
 <div class="row justify-content-center">
     <div class="col-12">
@@ -20,7 +19,8 @@
                                     <th class="text-center">Bodega</th>
                                     <th class="text-center">Ciudad</th>
                                     <th class="text-center">Direccion</th>
-                               
+                                    <th class="text-center">Acciones</th>
+
                                 </tr>
                             </thead>
                             <tbody class="table-body">
@@ -33,9 +33,14 @@
 
                                         <td class="text-center align-middle">
                                             <div class="row justify-content-center text-center">
-                                                <div class="col-6">
+                                                <div class="col-3">
                                                     <a href="" type="button">
-                                                        <i class="fas fa-edit" data-toggle="tooltip" title="Actualizar Empresa"></i>
+                                                        <i class="fas fa-edit" data-toggle="tooltip" title="Actualizar Bodega"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="{{route('bodega.producto', $bodega->id)}}" type="button">
+                                                        <i class="fas fa-shopping-basket" data-toggle="tooltip" title="Gestionar Productos"></i>
                                                     </a>
                                                 </div>
                                             </div>

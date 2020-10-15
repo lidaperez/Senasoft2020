@@ -22,6 +22,10 @@
     <script src="{{ asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/home_auth.js') }}"></script>
 
+     <!-- Select2 -->
+  <link rel="stylesheet" href="{{asset('adminlte/plugins/select2/css/select2.min.css')}}">
+  <link rel="stylesheet" href="{{asset('adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css')}}">
+
 
 
     <title>EasyBuy</title>
@@ -75,29 +79,6 @@
                       <span class="dropdown-header"> Notificaciones</span>
                       <div class="dropdown-divider"></div>
 
-                            <form class="form-inline" action="" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn" type="submit">
-                                    <i class="fas fa-users mr-2"></i> Novedad de Aforo
-                                </button>
-                            </form>
-
-                            <a href="" class="dropdown-item">
-                                <i class="fas fa-users mr-2"></i> Sin novedad de Aforo
-                            </a>
-                      <div class="dropdown-divider"></div>
-                            <form class="form-inline" action="" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn" type="submit">
-                                    <i class="fas fa-user mr-3"></i> casos especiales
-                                </button>
-                            </form>
-
-                            <a href="" class="dropdown-item">
-                                <i class="fas fa-user mr-3"></i> No hay casos especiales
-                            </a>
                     </div>
                 </li>
 
@@ -213,40 +194,12 @@
                             </ul>
                         </li>
 
-                        <!-- Producto -->
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fa fa-shopping-basket"></i>
-                                <p>
-                                    Producto
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item has-treeview">
-                                    <a href="{{route('producto.create')}}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>
-                                            Registrar Producto
-                                        </p>
-                                    </a>
-
-                                    <a href="{{route('producto.index')}}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>
-                                            Gestionar Productos
-                                        </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
                         <!-- Bodega -->
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fa fa-box-open"></i>
                                 <p>
-                                    Bodega
+                                    Bodegas
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -380,6 +333,21 @@
 
     <!-- AdminLTE App -->
     <script src="{{asset('adminlte/js/adminlte.js')}}"></script>
+
+    <!-- Select2 -->
+    <script src="{{asset('adminlte/plugins/select2/js/select2.full.min.js')}}"></script>
+
+    <script>
+         $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+            theme: 'bootstrap4'
+            })
+         }
+    </script>
 
 </body>
 

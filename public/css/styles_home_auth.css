@@ -67,7 +67,7 @@ footer.footer-auth{
   color: #0067D0;
   flex-shrink: 0;
   font-family: 'Calibri';
-  background-color:#17C0EB;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 footer.footer-auth .iconos{
   color: black;

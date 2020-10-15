@@ -7,9 +7,10 @@
                 <div class="col-12 mt-2 mb-4 text-center">
                     <h3 class="card-title">Registro Bodega</h3>
                 </div>
-                <form method="POST" action="" class="needs-validation" novalidate>
+                <form method="POST" action="{{route('bodega.store')}}" class="needs-validation" novalidate>
                     @csrf
                     <div class="form-row justify-content-center">
+                            <input name="id_empresa" type="hidden" value="{{Auth::user()->id_empresa}}">
 
                             <div class="form-group col-8">
                                 <input name="bodega" id="Bodega" placeholder="Bodega" type="text" class="form-control" maxlength="10" required>

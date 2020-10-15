@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Proveedor;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 class ProveedorController extends Controller
 {
@@ -14,8 +15,7 @@ class ProveedorController extends Controller
      */
     public function index()
     {
-        $proveedores = Proveedor::orderBy('proveedor', 'asc')
-        ->paginate(10);
+        $proveedores = Proveedor::paginate(10);
 
         return view('admin.proveedor.gestionar', compact('proveedores'));
     }
@@ -38,12 +38,14 @@ class ProveedorController extends Controller
      */
     public function store(Request $request)
     {
-        $empresa = new Proveedor();
+        $proveedor = new Proveedor();
 
+        $proveedor->id_empresa = Auth::user()->id_empresa;
+        $proveedor->id_persona = 1;
         $proveedor->razon_social = $request->input('razon_social');
         $proveedor->nit = $request->input('nit');
-      
-        $bodega->save();
+
+        $proveedor->save();
 
         Alert::success('Registrada', 'proveedor con éxito');
         return redirect(route('proveedor.create'));

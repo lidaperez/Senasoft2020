@@ -39,14 +39,14 @@ class FacturaController extends Controller
      */
     public function store(Request $request)
     {
-        $empresa = new Factura();
+        $factura = new Factura();
 
         $factura->numero_factura = $request->input('numero_factura');
         $factura->creado = $request->input('creado');
         $factura->medio_pago = $request->input('medio_pago');
         $factura->total = $request->input('total');
         $factura->iva_ = $request->input('iva_total');
-        
+
         $factura->save();
 
         Alert::success('Registrada', 'factura con éxito');

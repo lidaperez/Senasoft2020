@@ -7,7 +7,7 @@
                 <div class="col-12 mt-2 mb-4 text-center">
                     <h3 class="card-title">Producto</h3>
                 </div>
-                <form method="POST" action="{{route('producto.store')}}" class="needs-validation" novalidate>
+                <form method="POST" action="{{route('bodega.registro.producto',$id)}}" class="needs-validation" novalidate>
                     @csrf
                     <div class="form-row justify-content-center">
 
@@ -17,7 +17,7 @@
                                 <input id="categoria" name="categoria" placeholder="Categoria" type="text" class="form-control" maxlength="10" required autofocus>
                             </div>
                             <div class="form-group col-8">
-                                <input id="producto" name="Producto" placeholder="Producto" type="text" class="form-control" maxlength="10" required>
+                                <input id="producto" name="producto" placeholder="Producto" type="text" class="form-control" maxlength="10" required>
                             </div>
 
                            <div class="form-group col-8">
@@ -34,6 +34,10 @@
 
                             <div class="form-group col-8">
                                 <input name="stock_min" id="Stock minimo" placeholder="Stock minimo" type="number" class="form-control" maxlength="40" required>
+                            </div>
+
+                            <div class="form-group col-8">
+                                <input name="cantidad" placeholder="Cantidad Producto" type="number" class="form-control" maxlength="40" required>
                             </div>
 
                             <div class="form-group col-8 mt-3">

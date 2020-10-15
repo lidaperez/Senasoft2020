@@ -30,5 +30,9 @@ Route::resource('/bodega', 'BodegaController')->middleware('auth');
 Route::resource('/empresa', 'EmpresaController')->middleware('auth');
 Route::resource('/factura', 'FacturaController')->middleware('auth');
 Route::resource('/proveedor', 'ProveedorController')->middleware('auth');
+Route::get('/bodega_producto/{id}', 'BodegaController@bodega_producto')->name('bodega.producto')->middleware('auth');
+Route::get('/bodega_producto_create/{id}', 'BodegaController@bodega_producto_create')->name('bodega.producto.create')->middleware('auth');
+Route::post('/bodega_producto_registro/{id}', 'BodegaController@bodega_producto_registro')->name('bodega.registro.producto')->middleware('auth');
+
 
 Auth::routes();
