@@ -1,0 +1,187 @@
+/* tipografia institucional */
+@font-face{
+  font-family: 'Hand';
+  src: url("../fonts/Hand_Of_Sean_Demo.ttf");
+}
+
+/* colores institucionales */
+.background-naranja{
+  background-color: #0067D0;
+  border-color: #0067D0;
+}
+.color-naranja{
+  color: #0067D0;
+}
+.color-blanco{
+  color: #FFFFFF;
+}
+.color-rojo{
+  color: red;
+}
+.border-naranja{
+  border: 1px solid #0067D0;
+}
+.color-ctpi {
+  background-color: #fc7323 !important;
+  border-color: #fc7323 !important;
+}
+.color-agropecuario {
+  background-color: #238276 !important;
+  border-color: #238276 !important;
+}
+
+/* sidenav personalizado */
+.nav-pills .nav-link:not(.active):hover{
+  color: #0067D0;
+}
+[class*="sidebar-light-"] .nav-sidebar > .nav-item.menu-open > .nav-link, [class*="sidebar-light-"] .nav-sidebar > .nav-item:hover > .nav-link {
+  background-color: #0067D0;
+  color: #FFFFFF;
+}
+#iconos-sidenav{
+  color: #0067D0;
+}
+#text-sidenav{
+  font-family: 'Hand';
+  color: #FFFFFF;
+}
+
+/* card personalizada */
+.card-header, .brand-link{
+  background-color: #0067D0;
+}
+.card-title{
+  font-family: 'Hand';
+  float: none;
+  text-align: center !important;
+  color: #0067D0;
+  font-size: 25px;
+}
+.card-sena.card-outline{
+  border-top: 3px solid #0067D0;
+}
+
+/* footer */
+footer.footer-auth{
+  color: #0067D0;
+  flex-shrink: 0;
+  font-family: 'Calibri';
+}
+footer.footer-auth .iconos{
+  color: #0067D0;
+  font-size: 20px;
+}
+footer.footer-auth .copyright{
+  line-height: 1;
+  font-size: 1.18rem;
+  color: #0067D0;
+}
+footer.footer-auth .copyright_two{
+  color: #0067D0;
+  line-height: 1;
+  font-size: 1rem;
+  text-align: right !important;
+}
+footer.footer-auth .nuestra-autoria{
+  font-family: 'Hand';
+  color: #FFFFFF;
+  line-height: 1;
+  font-size: 0.8rem;
+  text-align: right !important;
+}
+body.sidebar-toggled footer.footer-auth{
+  width: 100%;
+}
+
+/* input personalizado */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="int"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+  border-color: #0067D0;
+}
+
+/* select personalizado */
+.custom-select{
+  box-shadow: none;
+}
+.custom-select:focus{
+  border-color: #0067D0 !important;
+}
+
+/* boton personalizado */
+.btn-azul{
+  background-color: #1786FF;
+  border-color: #1786FF;
+  color:#FFFFFF;
+  font-size: 18px;
+	font-weight: 550;
+}
+.btn-azul:hover{
+  background-color: #0067D0;
+  border-color: #0067D0;
+  color:#FFFFFF;
+  font-size: 18px;
+	font-weight: 550;
+}
+
+
+/* modal personalizado*/
+.modal-body{
+  font-family: 'Calibri';
+}
+.close, .mailbox-attachment-close{
+  opacity: 1;
+}
+#titulo-modal{
+  font-family: 'Hand';
+  font-size: 28px;
+}
+#subtitulo-modal{
+  font-size: 22px;
+}
+#descripcion-modal{
+  font-size: 18px;
+}
+
+/*Icono volver atras*/
+#icono-v{
+    color: #0067D0;
+}
+
+#btn-eliminar
+{
+    color: #0067D0;
+}
+
+#icono-eliminar-usuario{
+    color: #0067D0;
+}
+
+/*Sidebar*/
+[class*='sidebar-dark-'] {
+    background-color: #0067D0;
+}
+
+[class*='sidebar-dark-'] .sidebar a {
+    color: white;
+}
+
+[class*='sidebar-dark-'] .nav-treeview > .nav-item > .nav-link {
+    color: white;
+}
+
+[class*='sidebar-dark'] .brand-link {
+    border-bottom: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+[class*='sidebar-dark-'] .nav-sidebar > .nav-item.menu-open > .nav-link, [class*='sidebar-dark-'] .nav-sidebar > .nav-item:hover > .nav-link, [class*='sidebar-dark-'] .nav-sidebar > .nav-item > .nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0067D0;
+}
+

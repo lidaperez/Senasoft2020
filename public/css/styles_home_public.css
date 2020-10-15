@@ -1,0 +1,156 @@
+@font-face{
+    font-family: 'HansOfSean';
+    src: url("../fonts/Hand_Of_Sean_Demo.ttf");
+}
+
+@media screen and (max-width: 320px){
+    #logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #logo{
+        display: none;
+    }
+}
+
+@media screen and (max-with: 640px){
+    .logo{
+      display: none!important;
+    }
+}
+
+body::-webkit-scrollbar{
+	width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: #fc7323;
+	border-radius: 5px;
+}
+
+.modal-dialog-scrollable::-webkit-scrollbar{
+	width: 7px;
+}
+
+.modal-dialog-scrollable::-webkit-scrollbar-thumb{
+	background: #fc7323;
+	border-radius: 5px;
+}
+
+.colorOne {
+    color: #FC7323;
+}
+
+.colorTwo {
+    color: #238276;
+}
+
+.colorThree {
+    color: #59B548;
+}
+
+.text-title-two{
+  font-family: Calibri;
+  src: url("../fonts/");
+}
+
+.text-title, .title-target{
+  font-family: 'HansOfSean'!important;
+}
+
+.title-target{
+  margin-bottom: 30px!important;
+}
+
+.text-target{
+  font-family: Calibri;
+  font-size: 20px;
+}
+
+/* LLamado a la accion */
+.llamado_accion{
+  margin-top: 28%;
+  float: left !important;
+
+}
+#title_llamado {
+  font-family: 'HansOfSean'!important;
+  color: white;
+  font-size: 300%;
+  text-shadow: 5px 5px 5px #2A2421;
+}
+
+#btn_llamado{
+  width:47%;
+  height:50%;
+  font-size: 25px;
+}
+#card-noticias{
+  margin-left: 4%;
+}
+
+/* Nuevos estilos de contactanos */
+.formulario-contacto{
+  margin: 30px auto;
+  width: 500px;
+  font-family: Calibri;
+  font-size: 20px;
+}
+
+.item-contacto{
+  font-family: Calibri;
+  font-size: 18px;
+}
+
+.formulario-contacto input{
+  margin-bottom: 5%;
+}
+
+.formulario-contacto textarea{
+  margin-bottom: 1.5%;
+}
+
+#btnenviar {
+  float: right;
+  color: white;
+  font-weight: 550;
+}
+
+#text-terminos{
+  margin-top: 1%;
+  font-size: 70%;
+  float: left;
+}
+.fcontacto{
+  padding: 14px;
+  font-family: 'Calibri';
+}
+
+#alert-size{
+	border: 1px solid #f4623a !important;
+	border-radius: 5px;
+}
+#alerta-registro{
+	background-color: #f4623a !important;
+	border-color: #f4623a !important;
+	color: #FFFFFF;
+	font-weight: 550;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#correocontacto{
+  color: #f4623a;
+}
+
+#descripcion{
+  word-break: break-all !important;
+}
+
+.btn-search{
+  color: #FC7323;
+  background-color: transparent;
+}
+
