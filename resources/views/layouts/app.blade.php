@@ -45,9 +45,10 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
                     @guest
-                    <div class="col-sm-1">
+                    <div class="col-sm-1  ">
                         <li class="nav-item item-login">
-                            <h2 id="title-login">texto</h2>
+                            <h1 id="title-login">EasyBuy</h1>
+                            <h5>Multitiendas</h5>
                         </li>
                         <div class="col-sm-1">
                     @else
